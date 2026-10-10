@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { @apply bg-canvas text-slate-800 antialiased; font-feature-settings: 'tnum' 1; }
+  *:focus-visible { @apply outline outline-2 outline-offset-2 outline-brand-500; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
